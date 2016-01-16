@@ -14,6 +14,7 @@ Depois de configurada a sua conta, para facilitar, certifique-se que o arquivo P
 
 ##Exemplo de Utilização do Framework:
 
+'''
 <code>
 from googleAnalytics import Analytics
 
@@ -26,6 +27,7 @@ dados = conexao.resultados(
 	ordem = '-ga:sessions, ga:region'
 )
 </code>
+'''
 
 ##Listas de Dimensões e Métricas possíveis:
 https://developers.google.com/analytics/devguides/reporting/core/dimsmets
