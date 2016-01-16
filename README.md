@@ -14,7 +14,7 @@ Depois de configurada a sua conta, para facilitar, certifique-se que o arquivo P
 
 Exemplo de Utilização do Framework:
 
-#coding: utf-8
+Código
 from googleAnalytics import Analytics
 
 conexao = Analytics('email_de_acesso', 'localizacao/do/arquivo/P12')
@@ -25,6 +25,7 @@ dados = conexao.resultados(
 	dimensoes = 'ga:city',
 	ordem = '-ga:sessions, ga:region'
 )
+
 
 Listas de Dimensões e Métricas possíveis:
 https://developers.google.com/analytics/devguides/reporting/core/dimsmets
