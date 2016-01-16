@@ -14,7 +14,7 @@ Depois de configurada a sua conta, para facilitar, certifique-se que o arquivo P
 
 Exemplo de Utilização do Framework:
 
-Código
+
 from googleAnalytics import Analytics
 
 conexao = Analytics('email_de_acesso', 'localizacao/do/arquivo/P12')
