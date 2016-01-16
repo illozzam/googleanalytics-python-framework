@@ -14,20 +14,16 @@ Depois de configurada a sua conta, para facilitar, certifique-se que o arquivo P
 
 ##Exemplo de Utilização do Framework:
 
-'''
-<code>
-from googleAnalytics import Analytics
+<code>from googleAnalytics import Analytics</code>
 
-conexao = Analytics('email_de_acesso', 'localizacao/do/arquivo/P12')
-dados = conexao.resultados(
-	dataInicio = '2015-01-01',
-	dataFim = '2015-12-31',
-	metricas = 'ga:sessions',
-	dimensoes = 'ga:city',
-	ordem = '-ga:sessions, ga:region'
-)
-</code>
-'''
+<code>conexao = Analytics('email_de_acesso', 'localizacao/do/arquivo/P12')</code>
+<code>dados = conexao.resultados(</code>
+<code>	dataInicio = '2015-01-01',</code>
+<code>	dataFim = '2015-12-31',</code>
+<code>	metricas = 'ga:sessions',</code>
+<code>	dimensoes = 'ga:city',</code>
+<code>	ordem = '-ga:sessions, ga:region'</code>
+<code>)</code>
 
 ##Listas de Dimensões e Métricas possíveis:
 https://developers.google.com/analytics/devguides/reporting/core/dimsmets
