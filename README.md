@@ -1,5 +1,5 @@
 # googleanalytics-python-framework
-<a href="#ingles">English</a>
+<a href="#ingles">English</a><br/>
 Pequeno framework para acessar dados do Google Analytics via Python.
 
 Criado por Ricardo Lima Mazzolli usando códigos do Google.
