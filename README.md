@@ -1,9 +1,10 @@
 # googleanalytics-python-framework
+<a href="#ingles">English</a>
 Pequeno framework para acessar dados do Google Analytics via Python.
 
 Criado por Ricardo Lima Mazzolli usando códigos do Google.
 
-##Documentação:
+##Documentação
 
 Antes de utilizar, é necessário ativar a API do Analytics para a sua conta, criar uma chave de acesso, configurá-lo com as permissões desejadas dentro do seu Analytics e instalar a aplicação de cliente da API do Google Analytics. Para isso, siga as etapas 1 e 2 desse passo-a-passo:
 https://developers.google.com/analytics/devguides/reporting/core/v3/quickstart/service-py
@@ -28,4 +29,39 @@ dados = conexao.resultados(
 ```
 
 ##Listas de Dimensões e Métricas possíveis:
+https://developers.google.com/analytics/devguides/reporting/core/dimsmets
+
+<a name="ingles"></a>
+#googleanalytics-python-framework
+<a href="#">Original</a>
+
+Small framework to access Google Analytics data via Python.
+
+Created by Ricardo Lima Mazzolli using Google code .
+
+##Documentation
+
+Before using , you must enable the Analytics API to your account , create an access key, set it to the desired permissions within your Analytics and install the client application on the Google Analytics API. To do this , follow steps 1 and 2 of this step -by-step:
+https://developers.google.com/analytics/devguides/reporting/core/v3/quickstart/service-py
+
+NOTE: Steps 3 and 4 of informed step-by-step are interesting as an introduction for teaching purposes if there is interest but are not necessary for using this framework.
+
+Once you set your account, to make it easier, make sure that the P12 file is located in the same application folder that is developing. This framework is not compatible with credentials in JSON format.
+
+##Usage Example:
+
+```python
+from googleAnalytics import Analytics
+
+connection = Analytics('email_de_acesso', 'localizacao/do/arquivo/P12')
+data = connection.resultados(
+	dataInicio = '2015-01-01', #start-date
+	dataFim = '2015-12-31', #end-date
+	metricas = 'ga:sessions', #metrics
+	dimensoes = 'ga:city', #dimensions
+	ordem = '-ga:sessions, ga:region' #sort by?
+)
+```
+
+##Possible Dimensions and metrics list:
 https://developers.google.com/analytics/devguides/reporting/core/dimsmets
