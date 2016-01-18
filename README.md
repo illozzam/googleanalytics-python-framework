@@ -53,7 +53,7 @@ Once you set your account, to make it easier, make sure that the P12 file is loc
 ```python
 from googleAnalytics import Analytics
 
-connection = Analytics('email_de_acesso', 'localizacao/do/arquivo/P12')
+connection = Analytics('access_email', 'location/of/P12/file')
 data = connection.resultados(
 	dataInicio = '2015-01-01', #start-date
 	dataFim = '2015-12-31', #end-date
