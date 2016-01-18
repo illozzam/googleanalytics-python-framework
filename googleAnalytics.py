@@ -55,3 +55,24 @@ class Analytics:
 				dimensions = dimensoes
 			).execute()
 		return dados.get('rows')
+		
+	def results(self, start_date, end_date, metrics, dimensions, sort_by = None):
+		perfilId = 'ga:' + self.perfil
+		if sort_by:
+			dados = self.servico.data().ga().get(
+				ids = perfilId,
+				start_date = start_date,
+				end_date = end_date,
+				metrics = metrics,
+				dimensions = dimensions,
+				sort = sort_by
+			).execute()
+		else:
+			dados = self.servico.data().ga().get(
+				ids = perfilId,
+				start_date = start_date,
+				end_date = end_date,
+				metrics = metrics,
+				dimensions = dimensions
+			).execute()
+		return dados.get('rows')
