@@ -54,12 +54,12 @@ Once you set your account, to make it easier, make sure that the P12 file is loc
 from googleAnalytics import Analytics
 
 connection = Analytics('access_email', 'location/of/P12/file')
-data = connection.resultados(
-	dataInicio = '2015-01-01', #start-date
-	dataFim = '2015-12-31', #end-date
-	metricas = 'ga:sessions', #metrics
-	dimensoes = 'ga:city', #dimensions
-	ordem = '-ga:sessions, ga:region' #sort by?
+data = connection.results(
+	start_date = '2015-01-01',
+	end_date = '2015-12-31',
+	metrics = 'ga:sessions',
+	dimensions = 'ga:city',
+	sort_by = '-ga:sessions, ga:region'
 )
 ```
 
